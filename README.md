@@ -1,7 +1,7 @@
 # Solution of 1st Place for The 2nd CVPR DataCV Challenge 
 
 This is the code for reproducing our solution for the 2nd CVPR DataCV Challenge.
-![My Image](datacv_pre/assets/framework.png)
+![My Image](assets/framework.png)
 ## Installation
 ### Requirements
 
