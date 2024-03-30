@@ -25,11 +25,16 @@ pip install ultralytics==8.1.36
 
 1. Download region_100.zip and source_pool.zip via links from  `https://github.com/yorkeyao/DataCV2024/tree/main`
 
-2. Download the standard coco annotation of train2017: "instances_train2017.json"【这里要加超链接】
+2. Download the standard coco annotation of train2017: "instances_train2017.json"
+```bash
+wget http://images.cocodataset.org/annotations/annotations_trainval2017.zip -O /data/vdu2024/source_pool/annotations_trainval2017.zip 
+cd /data/vdu2024/source_pool
+unzip annotations_trainval2017.zip
+```
 
-3. Extract zip file into "/data/vdu2024/", you may need to create this directory if not exists.
+4. Extract zip file into "/data/vdu2024/", you may need to create this directory if not exists.
 
-4. Move images from "/data/vdu2024/region100/train/001-100/***.jpg" into "train/" for YOLOv8 to predict.
+5. Move images from "/data/vdu2024/region100/train/001-100/***.jpg" into "train/" for YOLOv8 to predict.
 ```bash
 cd train
 mv */*.jpg ./
