@@ -71,7 +71,7 @@ mv .bbox.json ap_sort/infer_coco.json
 
 ### 3. Selecting 8000 images with the highest image-wise AP from COCO dataset.
 ```bash
-python ap_sort/ap_sort.py 
+python ap_sort/ap_sort_coco.py 
 ```
 
 ### 4. Training model
