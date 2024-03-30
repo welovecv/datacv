@@ -45,7 +45,7 @@ data = dict(
         pipeline=test_pipeline),
     test=dict(
         type=dataset_type,
-        ann_file='/data/vdu2024/region100/coco_updated.json',
+        ann_file='/data/vdu2024/source_pool/coco_updated.json',
         img_prefix='/data/vdu2024/source_pool/coco_train/',
         pipeline=test_pipeline)
     )
