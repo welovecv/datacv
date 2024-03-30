@@ -15,9 +15,10 @@ We have tested the following versions of OS and software:
 - mmdet: 2.26.0
 - mmcv-full 1.7.0
 
-To create an environment to reproduce our best results, first set up the conda environment according to the [baseline project](https://github.com/yorkeyao/DataCV2024).  And we also use [YOLOv8](https://github.com/ultralytics/ultralytics), you also need to install ultralytics,
+To create an environment to reproduce our best results, first set up the conda environment according to the [baseline project](https://github.com/yorkeyao/DataCV2024), **but note that Python version here should be 3.8**.  And we also use [YOLOv8](https://github.com/ultralytics/ultralytics), you also need to install ultralytics,
 
 ```bash
+conda create -n tss python=3.8 -y
 pip install ultralytics==8.1.36
 ```
 
