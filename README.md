@@ -19,7 +19,7 @@ To create an environment to reproduce our best results, first set up the conda e
 
 ```bash
 conda create -n tss python=3.8 -y
-pip install ultralytics==8.1.36
+pip install terminaltables pycocotools ultralytics==8.1.36 
 ```
 
 #### Dataset setup
