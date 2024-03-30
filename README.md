@@ -66,7 +66,7 @@ python ap_sort/yolo2coco.py
 ```bash
 python tools/train.py configs_tss/retinanet/001_train2source.py
 python tools/test.py configs_tss/retinanet/001_train2source.py work_dirs/001_train2source/latest.pth --format-only --options "jsonfile_prefix=./"
-mv .bbox ap_sort/infer_coco.json
+mv .bbox.json ap_sort/infer_coco.json
 ```
 
 ### 3. Selecting 8000 images with the highest image-wise AP from COCO dataset.
