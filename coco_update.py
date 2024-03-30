@@ -10,7 +10,7 @@ with open(coco_json_file, 'r') as f:
 
 image_names = [image['file_name'] for image in coco_data['images']]
 
-coco_json_file = '/data/vdu2024/source_pool/instances_train2017.json'
+coco_json_file = '/data/vdu2024/source_pool/annotations/instances_train2017.json'
 # coco_json_file = 'source_pool/instances_val2017.json'
 
 with open(coco_json_file, 'r') as f:
