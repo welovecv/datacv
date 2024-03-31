@@ -1,7 +1,6 @@
 import json
 import random
 import os
-from tqdm import tqdm
 from PIL import Image
 
 # Load the original COCO dataset
@@ -32,7 +31,7 @@ def create_mosaic(group_ids, new_image_id, new_annotation_id):
     new_annotations = []
     quadrant_width, quadrant_height = 512, 512
 
-    for i, img_id in tqdm(enumerate(group_ids)):
+    for i, img_id in enumerate(group_ids):
         # Find the image by ID
         item = next(item for item in coco_data["images"] if item["id"] == img_id)
         original_image = Image.open("/data/vdu2024/source_pool/coco_train/" + item["file_name"])
