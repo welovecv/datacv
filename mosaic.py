@@ -35,7 +35,7 @@ def create_mosaic(group_ids, new_image_id, new_annotation_id):
     for i, img_id in tqdm(enumerate(group_ids)):
         # Find the image by ID
         item = next(item for item in coco_data["images"] if item["id"] == img_id)
-        original_image = Image.open("coco_train/" + item["file_name"])
+        original_image = Image.open("/data/vdu2024/source_pool/coco_train/" + item["file_name"])
         resized_image, scale = resize_image(original_image, quadrant_width, quadrant_height)
 
         x_offset = (i % 2) * quadrant_width
