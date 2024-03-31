@@ -33,9 +33,9 @@ cd /data/vdu2024/source_pool
 unzip annotations_trainval2017.zip
 ```
 
-4. Extract zip file into "/data/vdu2024/", you may need to create this directory if not exists.
+3. Extract zip file into "/data/vdu2024/", you may need to create this directory if not exists.
 
-5. Move images from "/data/vdu2024/region100/train/001-100/***.jpg" into "train/" for YOLOv8 to predict.
+4. Move images from "/data/vdu2024/region100/train/001-100/***.jpg" into "train/" for YOLOv8 to predict.
 ```bash
 cd train
 mv */*.jpg ./
