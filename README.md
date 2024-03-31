@@ -111,8 +111,8 @@ python tools/train.py configs_tss/retinanet/003_coco_8000_mosaic.py
 ## Evaluation
 Due to a severe crash of our server, we have unfortunately lost the original model weights referenced in the paper. As a result, the performance metrics associated with the "checkpoints.zip" from release differ slightly from those previously reported.
 
-| Models   |  testA   |  test B  |
-|----------|----------|----------|
+| Models   |  testA   |  testB  |
+|------------|------------|------------|
 | AP-COCO (paper)  |22.96    |   22.57     |
 | AP-COCO (This repo)    | 23.2     | N/A     |
 | AP-COCO+Mosaic (paper)  |22.62     |   22.85     |
