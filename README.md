@@ -10,7 +10,7 @@ We have tested the following versions of OS and software:
 - Nvidia drivers: 470.57.02
 - 1 x NVIDIA Tesla V100 SXM2 32GB
 
-- Python 3.8.0
+- Python 3.8.19
 - pytorch 1.12.1
 - mmdet: 2.26.0
 - mmcv-full 1.7.0
