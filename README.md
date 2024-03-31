@@ -53,7 +53,7 @@ python coco_update.py
 - Download YOLOv8x checkpoint and infer on train set of Region 100. After inference, it will generate peusdo labels under "./runs/predict/labels" from the main directory. Move "predict" folder for label format conversion.
 ```bash
 wget https://github.com/ultralytics/assets/releases/download/v8.1.0/yolov8x.pt
-yolo detect predict model=./yolov8x.pt source=/data/vdu2024/region_100/train conf=0.1 imgsz=1280 save_txt=True classes=[2,5,7] save=False runs_dir=./ap_sort
+yolo detect predict model=./yolov8x.pt source=/data/vdu2024/region_100/train conf=0.1 imgsz=1280 save_txt=True classes=[2,5,7] save=False
 mv runs/detect/predict ap_sort/
 ```
 
