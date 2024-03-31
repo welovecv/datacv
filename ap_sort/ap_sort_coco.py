@@ -160,7 +160,7 @@ for filename in os.listdir(gt_each_folder):
 unique_categories = {cat['id']: cat for cat in merged_annotations['categories']}.values()
 merged_annotations['categories'] = list(unique_categories)
 
-# 将合并后的数据写入到JSON文件
+# Write the merged data to a JSON file.
 with open(output_json_file, 'w') as f:
     json.dump(merged_annotations, f)
 
